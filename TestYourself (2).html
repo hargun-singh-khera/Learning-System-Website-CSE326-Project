@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO QUIZ</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<!-- custom css file link  -->
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="quiz.js"></script>
+
+<!-- css begins/ styling of website starts from here  -->
+<style> 
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Here margin and padding will be available for all the HTML elements*/
+ }
+body{
+    background-color: #5984d4;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 2rem;
+    margin-top: 20px;
+}
+#button{
+         display: inline-block;
+         text-decoration: none;
+         color: white;
+         border: 1px solid white;
+         padding: 12px 14px;
+         font-size: medium;
+         background: transparent;
+         position: relative;
+         cursor: pointer;    
+         margin-right: 40px; 
+         margin-left: 0px; 
+         margin-top: 20px;   
+     }
+     #button:hover{
+         border: 1px soild red;
+         background: red;
+         transition: 0.5s;
+     }
+
+    /*---Tutors/About Faculties---*/
+    
+</style>
+
+    <body>
+      
+
+    <!-- header section starts  -->
+      <form name="quiz" id="quiz">
+          <div>
+            Q1. What is 2+3?<br>
+            <input type="radio" name="question1" id="correct1" >A. 5 <br>
+            <input type="radio" name="question1" >B. 8 <br>
+            <input type="radio" name="question1" >C. 9 <br>
+            <input type="radio" name="question1" >D. 10 <br>
+
+            Q2. What is 10/3?<br>
+            <input type="radio" name="question2" id="correct2" >A. 3.33 <br>
+            <input type="radio" name="question2" >B. 3.92 <br>
+            <input type="radio" name="question2" >C. 3.09 <br>
+            <input type="radio" name="question2" >D. 3 <br>
+            
+            Q3. What is the capital of India?<br>
+            <input type="radio" name="question3" >A. Agra <br>
+            <input type="radio" name="question3" >B. Mumbai<br>
+            <input type="radio" name="question3"  id="correct3">C. New Delhi <br>
+            <input type="radio" name="question3" >D. Chandigarh <br>
+            Q4. What is 10*3?<br>
+            <input type="radio" name="question4"  >A. 40 <br>
+            <input type="radio" name="question4" >B. 50 <br>
+            <input type="radio" name="question4" id="correct4">C. 30 <br>
+            <input type="radio" name="question4" >D. 60 <br>
+            Q5. What is 10.0*3?<br>
+            <input type="radio" name="question5" >A. 40.0 <br>
+            <input type="radio" name="question5" >B. 80.0 <br>
+            <input type="radio" name="question5" >C. 90.0 <br>
+            <input type="radio" name="question5" id="correct5" >D. 30.0 <br>
+            
+            </div>
+           
+            <input type="submit" name="submit" value="SubmitQuiz" id="button" onClick="result()">
+      </form>
+        
+            
+            
+      
+</body>
+
+</html>

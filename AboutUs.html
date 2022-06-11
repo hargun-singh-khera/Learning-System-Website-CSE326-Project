@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning System</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<!-- custom css file link  -->
+<link rel="stylesheet" href="css/style.css">
+<!-- css begins/ styling of website starts from here  -->
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Here margin and padding will be available for all the HTML elements*/
+    
+ }
+.header{
+      
+      width: 100%;
+      background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.7)),url(image/image.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+ }
+ nav{
+     display: flex;
+     padding: 2px 6px;
+     justify-content: space-between;
+     align-items: center;
+ }
+ nav img{
+     width: 18%;
+ }
+ .navbar{
+     flex: 1; /*Occupies all the space in the row*/
+     text-align: right;
+ }
+ .navbar ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 22px;
+     position: relative;
+ }
+ .navbar ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 13px;
+     font-size: small;   
+ }
+ .navbar ul li::after{
+     content: '';
+     width: 0%;
+     height: 2px;
+     background: red;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+ }
+ .navbar ul li:hover::after{
+     width: 100%;
+ }
+ .mid {
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+        padding-top: 45px;
+        
+        /* border: 2px solid green; */
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        font-style: italic;
+        
+    }
+    h3{
+        font-size: 26px;
+        font-weight: 450;
+        text-decoration: underline;
+        text-align: justify;
+        padding: 0px 40px;
+        margin-top: -10px;
+    }
+    h4{
+        font-size: 26px;
+        font-weight: 450;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px 17px;
+        margin-top: 0px;
+        margin-right: 1px;
+        color: purple;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 350;
+        padding: 10px;
+        color: rgb(61, 90, 184);
+    }
+    #one{
+        width: 115%;
+        text-align: center;
+        padding: 5px 25px;
+        background: #fff3f3;
+    }
+    #two{
+        width: 115%;
+        text-align: justify;
+        padding: 5px 25px;
+        background: #fff3f3;
+        box-sizing: content-box;
+    }
+    #four{
+        width: 115%;
+        text-align: center;
+        padding: 5px 25px;
+        background: #fff3f3;
+    }
+    /*-----TUTORS PAGE----*/
+    .sub-header{
+        height 10vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/about-us-banner.png);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+    .sub-header h1{
+        margin-top: 20px;
+        text-align: center;
+    }
+    /*---/About Us---*/
+    
+    .row{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .about{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+        padding: 5px 60px;
+    }
+    .about-col{
+        flex-basis: 31%; /**/
+        border-radius: 10px;
+        margin-bottom: 5%;
+        background: #fff3f3;
+    }
+    .about-col img{
+         width: 80%;
+         border-radius: 100%;
+         margin-left: 5px;
+         align-items: center;
+    }
+</style>
+
+    <body> 
+    <!-- header section starts  -->
+      <section class="sub-header">
+           <nav>
+               <a href="Sample.html"><img src="image/logo.png" width="8%"alt="Error"></a>
+               <div class="navbar">
+                   <ul>
+                       <li><a href="Sample1.html">HOME</a></li>
+                       <li><a href="Videos.html">VIDEOS</a></li>
+                       <li><a href="Tutors.html">TUTORS</a></li>
+                       <li><a href="TestYourself.html">TESTYOURSELF</a></li>
+                       <li><a href="ContactUs.html">CONTACT US</a></li>
+                   </ul>
+               </div>
+               
+           </nav>
+           <h1>ABOUT US</h1><br><br>
+            <br><br>
+
+      </section>
+     
+          <br> 
+        
+        <h2>Our Founders</h2>
+        <section class="about">
+            <div class="row">
+                <div class="about-col">
+                    <img src="image/hargun.png" alt="ERROR">
+                    <h4>Hargun Singh Khera</h4>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi sed? Asperiores, unde. Quae nostrum aliquam id, voluptate voluptatem velit, reprehenderit alias aliquid harum aperiam, officia dolorem eligendi dignissimos quisquam.</p>
+                </div>
+                <div class="about-col">
+                 <img src="image/baneet.png" alt="ERROR">
+                 <h4>Baneet Pal Singh Dhawan</h4>
+                 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi sed? Asperiores, unde. Quae nostrum aliquam id, voluptate voluptatem velit, reprehenderit alias aliquid harum aperiam, officia dolorem eligendi dignissimos quisquam.</p>
+             </div>
+             <div class="about-col">
+                 <img src="image/mohit.png" alt="ERROR">
+                 <h4>Mohit Chand</h4>
+                
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, animi sed? Asperiores, unde. Quae nostrum aliquam id, voluptate voluptatem velit, reprehenderit alias aliquid harum aperiam, officia dolorem eligendi dignissimos quisquam.</p>
+             </div>
+            </div>
+        </section>
+    
+    
+     
+            
+</body>
+
+</html>

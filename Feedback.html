@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning System</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<!-- custom css file link  -->
+<link rel="stylesheet" href="css/style.css">
+<!-- css begins/ styling of website starts from here  -->
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Here margin and padding will be available for all the HTML elements*/
+    
+ }
+.header{
+      
+      width: 100%;
+      background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.7)),url(image/image.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+ }
+ nav{
+     display: flex;
+     padding: 2px 6px;
+     justify-content: space-between;
+     align-items: center;
+ }
+ nav img{
+     width: 18%;
+ }
+ .navbar{
+     flex: 1; /*Occupies all the space in the row*/
+     text-align: right;
+ }
+ .navbar ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 22px;
+     position: relative;
+ }
+ .navbar ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 13px;
+     font-size: small;   
+ }
+ .navbar ul li::after{
+     content: '';
+     width: 0%;
+     height: 2px;
+     background: red;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+ }
+ .navbar ul li:hover::after{
+     width: 100%;
+ }
+ .mid {
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+        padding-top: 45px;
+        
+        /* border: 2px solid green; */
+    }
+    h1{
+        font-size: 33px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: justify;
+        color: rgb(81, 10, 248);
+    }
+    h3{
+        font-size: 26px;
+        font-weight: 450;
+        text-decoration: underline;
+        text-align: justify;
+        padding: 0px 40px;
+        margin-top: -10px;
+    }
+    
+    p{
+        font-size: 15px;
+        font-weight: 350;
+        padding: 10px;
+    }
+    #one{
+        width: 115%;
+        text-align: center;
+        padding: 5px 25px;
+        background: #fff3f3;
+    }
+    #two{
+        width: 115%;
+        text-align: justify;
+        padding: 5px 25px;
+        background: #fff3f3;
+        box-sizing: content-box;
+    }
+    /*-----TUTORS PAGE----*/
+    .sub-header{
+        height 40vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/feedback.png);
+        background-position: center;
+        background-size:cover;
+        color: white;
+    }
+    .sub-header h1{
+        margin-top: 20px;
+        text-align: center;
+    }
+    /*---Tutors/About Faculties---*/
+    .quiz{
+        text-align: center;
+    }
+     .hero-btn2{
+         display: inline-block;
+         text-decoration: none;
+         color: white;
+         border: 1px solid c;
+         padding: 6px 24px;
+         font-size: 17px;
+         margin-top: 10px;
+         background: transparent;
+         position: relative;
+         cursor: pointer;    
+         border-radius: 17px;     
+     }
+     .hero-btn2:hover{
+         border: 1px soild red;
+         background: darkblue;
+         transition: 0.5s;
+     }
+     .feedback{
+         width: 500px;
+         top: 25%;
+         left: 34%;
+         position: absolute; 
+          
+     }
+     
+     .input-field{
+         width: 100%;
+         height: 40px;
+         margin-top: 20px;
+         padding-left: 10px;
+         padding-right: 70px;
+         border: 1.9px solid rgb(81, 10, 248);
+         border-radius: 14px;
+         outline: none;
+         margin-right: 0px;
+         align-items: center; 
+         background: transparent;
+         
+     }
+     .textarea-field{
+         height: 150px;
+         padding-top: 10px;
+         margin-right: 105px;
+         background: transparent;
+         
+     }
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url('image/rendered.jpg');
+        
+    }
+  
+
+
+
+  
+</style>
+
+    <body> 
+    <!-- header section starts  -->
+      <section class="sub-header">
+           <nav>
+               <a href="Sample.html"><img src="image/logo.png" width="8%"alt="Error"></a>
+               <div class="navbar">
+                   <ul>
+                       <li><a href="Sample1.html">HOME</a></li>
+                       <li><a href="Videos.html">VIDEOS</a></li>
+                       <li><a href="Tutors.html">TUTORS</a></li>
+                       <li><a href="TestYourself.html">TESTYOURSELF</a></li>
+                       <li><a href="ContactUs.html">CONTACT US</a></li>
+                   </ul>
+               </div>
+           </nav>
+            <br><br>
+
+      </section>
+      <section class="feedback">  
+          <br> 
+        <h1>Your Feedback is Important for Us</h1><br><br>       
+            <div class="feedback-box">
+                <form action="feedback-form">
+                    <h2>Give your feedback here</h2>
+                    <input type="text" class="input-field" placeholder="Full name" required>
+                    <input type="email" class="input-field" placeholder="Enter your email address" required>
+                    <textarea cols="15" rows="5" class="input-field textarea-field" placeholder="Enter your opinions here..." required></textarea>
+                    <button type="submit" class="hero-btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+      
+     </section>
+    
+     
+            
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning System</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<!-- custom css file link  -->
+<link rel="stylesheet" href="css/style.css">
+<!-- css begins/ styling of website starts from here  -->
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Here margin and padding will be available for all the HTML elements*/
+    
+ }
+.header{
+      
+      width: 100%;
+      background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.7)),url(image/image.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+ }
+ nav{
+     display: flex;
+     padding: 2px 6px;
+     justify-content: space-between;
+     align-items: center;
+     
+ }
+ 
+ .navbar{
+     flex: 1; /*Occupies all the space in the row*/
+     text-align: right;
+     margin-top: 100px;
+ }
+ .navbar ul li{
+     list-style: none;
+     display: list-item;
+     padding: 18px 2px;
+     position: relative;
+     margin-right: 0%;
+     align-items: center;
+     text-align: center;
+     margin-top: 0px;
+    
+ }
+ .navbar ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 13px;
+     font-size: small;
+     align-items: center;
+     text-align: center;   
+     font-size: 20px;
+ }
+ .navbar ul li::after{
+     content: '';
+     width: 0%;
+     height: 2px;
+     background: red;
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+ }
+ .navbar ul li:hover::after{
+     width: 9%;
+ }
+ .mid {
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+        padding-top: 45px;
+        
+        /* border: 2px solid green; */
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+    }
+    h3{
+        font-size: 26px;
+        font-weight: 450;
+        text-decoration: underline;
+        text-align: justify;
+        padding: 0px 40px;
+        margin-top: -10px;
+    }
+    h4{
+        font-size: 26px;
+        font-weight: 450;
+        text-decoration: none;
+        text-align: center;
+        padding: 0px 40px;
+        margin-top: 0px;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 350;
+        padding: 10px;
+    }
+    #one{
+        width: 115%;
+        text-align: center;
+        padding: 5px 25px;
+        background: #fff3f3;
+    }
+    #two{
+        width: 115%;
+        text-align: justify;
+        padding: 5px 25px;
+        background: #fff3f3;
+        box-sizing: content-box;
+    }
+    /*-----TUTORS PAGE----*/
+    .sub-header{
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/background.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+ 
+
+</style>
+
+    <body>
+    <!-- header section starts  -->
+      <section class="sub-header">
+           <nav>
+               
+               <div class="navbar">
+                   <ul>
+                       <li><a href="Home.html">HOME</a></li>
+                       <li><a href="Videos.html">VIDEOS</a></li>
+                       <li><a href="Tutors.html">TUTORS</a></li>
+                       <li><a href="TestYourself.html">TESTYOURSELF</a></li>
+                       <li><a href="ContactUs.html">CONTACT US</a></li>
+                       <li><a href="AboutUs.html">ABOUT</a></li>
+                       <li><a href="FAQs.html">FAQs</a></li>
+                       <li><a href="TestYourself (2).html">DEMO QUIZ</a></li>
+                       <li><a href="Feedback.html">FEEDBACK</a></li>
+
+
+                   </ul>
+               </div>
+           </nav>
+
+      </section>
+      
+          
+            
+</body>
+
+</html>
